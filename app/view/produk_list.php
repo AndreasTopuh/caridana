@@ -100,7 +100,7 @@ $produkList = $produkController->showAllProduk();
 <body>
     <div class="container mt-5">
         <h1 class="page-title">Daftar Caridana</h1>
-        <a href="dashboarduser.php" class="back-btn">Kembali ke Dashboard</a>
+        <a href="dashboarduser.php" class="btn btn-secondary mb-3">Kembali ke Dashboard</a>
 
         <div class="row">
             <?php if ($produkList): ?>

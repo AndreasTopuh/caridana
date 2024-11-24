@@ -92,7 +92,7 @@ if (!isset($_SESSION['user'])) {
     <div class="container mt-5">
         <h1 class="page-title">Tambah Jualan</h1>
         
-        <a href="dashboarduser.php" class="back-btn mb-3">Kembali ke Dashboard</a>
+        <a href="dashboarduser.php" class="btn btn-secondary mb-3">Kembali ke Dashboard</a>
         
         <form method="POST" action="../controller/ProdukController.php" class="card p-4 bg-white rounded">
             <div class="form-group">
