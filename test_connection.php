@@ -1,6 +1,6 @@
 <?php
 // Memasukkan file Database.php
-require_once 'Database.core.php';
+require_once './app/core/Database.php';
 
 // Membuat objek dari kelas Database
 $database = new Core\Database();
