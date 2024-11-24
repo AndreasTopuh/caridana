@@ -112,6 +112,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
                                     </select>
                                     <button type="submit" name="update_produk" class="btn btn-primary btn-sm mt-1">Update</button>
                                 </form>
+                                <form method="POST" action="" onsubmit="return confirm('Apakah Anda yakin ingin menghapus produk ini?');">
+                                    <input type="hidden" name="id" value="<?= $produk['id']; ?>">
+                                    <button type="submit" name="delete_produk" class="btn btn-danger btn-sm mt-1">Delete</button>
+                                </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>

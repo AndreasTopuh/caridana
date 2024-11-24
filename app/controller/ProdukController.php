@@ -53,11 +53,27 @@ class ProdukController{
                 echo "User belum login.";
             }
         }
+
+        if (isset($_POST['delete_produk'])) {
+            $id = $_POST['id'];
+            if ($this->deleteProduk($id)) {
+                header("Location: produk_saya.php"); // Redirect ke halaman produk setelah delete
+                exit();
+            } else {
+                echo "Gagal menghapus produk.";
+        }
+    }
     }
 
     public function showUserProduk($userId) {
         return $this->produkModel->getProdukByUser($userId);
     }
+
+        // ProdukController.php
+    public function deleteProduk($id) {
+        return $this->produkModel->deleteProduk($id);
+    }
+
 }
 
 $produkController = new ProdukController();
