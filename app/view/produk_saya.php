@@ -44,10 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
                     <th>Harga</th>
                     <th>Jenis</th>
                     <th>Status</th>
+                    <th>Alamat</th> 
                     <th>Nomor Penjual</th>
-                    <th>Alamat</th> <!-- Menambahkan kolom Alamat -->
                     <th>Deskripsi</th>
-                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
