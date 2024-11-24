@@ -34,6 +34,7 @@ class ProdukController{
                 'jenis' => $_POST['jenis'],
                 'status' => $_POST['status'],
                 'nomor_penjual' => $_POST['nomor_penjual'],
+                'alamat' => $_POST['alamat'],
                 'deskripsi' => $_POST['deskripsi']
             ];
 

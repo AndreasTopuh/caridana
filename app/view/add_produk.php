@@ -69,6 +69,10 @@ if (!isset($_SESSION['user'])) {
                 <input type="text" name="jenis" id="jenis" class="form-control form-control-sm" placeholder="Jenis Jualan">
             </div>
             <div class="mb-3">
+                <label for="alamat" class="form-label small-label">Alamat Penjual</label>
+                <input type="text" name="alamat" id="jenis" class="form-control form-control-sm" placeholder="Alamat Penjual">
+            </div>
+            <div class="mb-3">
                 <label for="status" class="form-label small-label">Status</label>
                 <select name="status" id="status" class="form-select form-control-sm" required>
                     <option value="tersedia">Tersedia</option>
@@ -81,6 +85,7 @@ if (!isset($_SESSION['user'])) {
                 
                 <input type="text" name="nomor_penjual" id="nomor_penjual" class="form-control form-control-sm" placeholder="Nomor Penjual" required>
             </div>
+ 
             <div class="mb-3">
                 <label for="deskripsi" class="form-label small-label">Deskripsi</label>
                 <p><em>Tulis kekurangan/mines Jualan anda</em></p>

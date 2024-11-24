@@ -32,8 +32,8 @@ class ProdukModel {
 
 
     public function addProduk($data, $userId) {
-        $query = "INSERT INTO " . $this->table_name . " (nama, harga, jenis, status, nomor_penjual, deskripsi, id_user) 
-                VALUES (:nama, :harga, :jenis, :status, :nomor_penjual, :deskripsi,:id_user)";
+        $query = "INSERT INTO " . $this->table_name . " (nama, harga, jenis, status, nomor_penjual, deskripsi, id_user, alamat) 
+                VALUES (:nama, :harga, :jenis, :status, :nomor_penjual, :deskripsi,:id_user, :alamat)";
         $stmt = $this->conn->prepare($query);
         
         $stmt->bindParam(':nama', $data['nama']);
@@ -43,6 +43,7 @@ class ProdukModel {
         $stmt->bindParam(':status', $data['status']);
         $stmt->bindParam(':nomor_penjual', $data['nomor_penjual']);
         $stmt->bindParam(':deskripsi', $data['deskripsi']);
+        $stmt->bindParam(':alamat', $data['alamat']);
         $stmt->bindParam(':id_user', $userId);
 
         return $stmt->execute();

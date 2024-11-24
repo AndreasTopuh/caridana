@@ -61,6 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
 
                             <td><?= htmlspecialchars($produk['status']); ?></td>
 
+                            <td><?= htmlspecialchars($produk['alamat']); ?></td>
+
                             <td><?= htmlspecialchars($produk['nomor_penjual']); ?></td>
 
                             <td><?= htmlspecialchars($produk['deskripsi']); ?></td>
