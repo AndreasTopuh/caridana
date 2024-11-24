@@ -50,17 +50,17 @@ $user = $_SESSION['user'];
             <div class="col-md-4">
                 <div class="card text-center mb-4 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Tambah Barang</h5>
-                        <p class="card-text">Tambahkan barang baru yang ingin Anda jual.</p>
-                        <a href="./add_produk.php" class="btn btn-custom">Tambah Barang</a>
+                        <h5 class="card-title">Tambah Jualan</h5>
+                        <p class="card-text">Tambahkan jualan baru yang ingin Anda jual.</p>
+                        <a href="./add_produk.php" class="btn btn-custom">Tambah Jualan</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card text-center mb-4 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Daftar Barang</h5>
-                        <p class="card-text">Lihat semua barang yang tersedia untuk dijual.</p>
+                        <h5 class="card-title">Daftar Jualan</h5>
+                        <p class="card-text">Lihat semua Jualan yang tersedia untuk dijual.</p>
                         <a href="./produk_list.php" class="btn btn-custom">Lihat Daftar</a>
                     </div>
                 </div>
@@ -68,9 +68,9 @@ $user = $_SESSION['user'];
             <div class="col-md-4">
                 <div class="card text-center mb-4 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Barang yang Anda Jual</h5>
-                        <p class="card-text">Kelola barang-barang yang telah Anda jual.</p>
-                        <a href="./produk_saya.php" class="btn btn-custom">Lihat Barang</a>
+                        <h5 class="card-title">Jualan yang Anda Jual</h5>
+                        <p class="card-text">Kelola Jualan-Jualan yang telah Anda jual.</p>
+                        <a href="./produk_saya.php" class="btn btn-custom">Lihat Jualan</a>
                     </div>
                 </div>
             </div>
