@@ -9,7 +9,6 @@ if (!isset($_SESSION['user'])) {
 
 require_once '../controller/ProdukController.php';
 
-
 use Controller\ProdukController;
 
 $produkController = new ProdukController();
@@ -29,12 +28,55 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk yang Anda Jual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/caridana/public/css/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .btn-secondary {
+            background-color: #00796b;
+            border-color: #00796b;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .btn-secondary:hover {
+            background-color: #004d40;
+            border-color: #004d40;
+        }
+        .table {
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            text-align: center;
+        }
+        .form-select {
+            width: 120px;
+        }
+        .table-striped tbody tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #00796b;
+            margin-bottom: 30px;
+        }
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 <body class="bg-light">
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Produk yang Anda Jual</h1>
+        <h1 class="page-title">Produk yang Anda Jual</h1>
         <a href="dashboarduser.php" class="btn btn-secondary mb-3">Kembali ke Dashboard</a>
 
         <table class="table table-striped table-bordered">
@@ -45,9 +87,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
                     <th>Jenis</th>
                     <th>Status</th>
                     <th>Nomor Penjual</th>
-                    <th>Alamat</th> 
-
+                    <th>Alamat</th>
                     <th>Deskripsi</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -55,19 +97,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
                     <?php foreach ($userProdukList as $produk): ?>
                         <tr>
                             <td><?= htmlspecialchars($produk['nama']); ?></td>
-
                             <td>Rp <?= htmlspecialchars(number_format($produk['harga'], 2, ',', '.')); ?></td>
-
                             <td><?= htmlspecialchars($produk['jenis']); ?></td>
-
                             <td><?= htmlspecialchars($produk['status']); ?></td>
-
                             <td><?= htmlspecialchars($produk['nomor_penjual']); ?></td>
-
-                            <td><?= htmlspecialchars($produk['alamat']); ?></td> <!-- Menampilkan alamat -->
-
+                            <td><?= htmlspecialchars($produk['alamat']); ?></td>
                             <td><?= htmlspecialchars($produk['deskripsi']); ?></td>
-
                             <td>
                                 <form method="POST" action="">
                                     <input type="hidden" name="id" value="<?= $produk['id']; ?>">
@@ -88,6 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_produk'])) {
             </tbody>
         </table>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
