@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #800000;
+            background-color: #f8f9fa;
         }
         .login-container {
             max-width: 400px;
@@ -26,6 +26,20 @@
         .error, .success {
             text-align: center;
             margin-top: 10px;
+        }
+        .error {
+            color: #dc3545;
+        }
+        .success {
+            color: #28a745;
+        }
+        .btn-primary {
+            background-color: #00796b;
+            border-color: #00796b;
+        }
+        .btn-primary:hover {
+            background-color: #004d40;
+            border-color: #004d40;
         }
     </style>
 </head>
@@ -46,16 +60,16 @@
         </form>
 
         <?php if (isset($_SESSION['error'])): ?>
-            <p class="error text-danger"><?= htmlspecialchars($_SESSION['error']); ?></p>
+            <p class="error"><?= htmlspecialchars($_SESSION['error']); ?></p>
             <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
 
         <?php if (isset($_SESSION['success'])): ?>
-            <p class="success text-success"><?= htmlspecialchars($_SESSION['success']); ?></p>
+            <p class="success"><?= htmlspecialchars($_SESSION['success']); ?></p>
             <?php unset($_SESSION['success']); ?>
         <?php endif; ?>
 
-                <p class="text-center mt-3">Jika Anda belum terdaftar, silakan <a href="/unkpresent/caridana/app/view/register.php">daftar di sini</a>.</p>
+        <p class="text-center mt-3">Jika Anda belum terdaftar, silakan <a href="/unkpresent/caridana/app/view/register.php">daftar di sini</a>.</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
