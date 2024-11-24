@@ -125,13 +125,12 @@ if (!isset($_SESSION['user'])) {
 
             <div class="form-group">
                 <label for="nomor_penjual" class="form-label">Nomor Penjual</label>
-                <p><em><strong>Contoh: 628*********</strong></em></p>
                 <input type="text" name="nomor_penjual" id="nomor_penjual" class="form-control form-control-sm" placeholder="Nomor Penjual" required>
             </div>
 
             <div class="form-group">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
-                <p><em>Tulis kekurangan/mines Jualan anda</em></p>
+                <p><em>Tulis jika ada informasi tambahan</em></p>
                 <textarea name="deskripsi" id="deskripsi" class="form-control form-control-sm" placeholder="Deskripsi"></textarea>
             </div>
 

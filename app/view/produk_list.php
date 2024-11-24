@@ -110,7 +110,9 @@ $produkList = $produkController->showAllProduk();
                             <div class="card-body">
                                 <h5 class="card-title"><?= htmlspecialchars($produk['nama']); ?></h5>
                                 <h6 class="card-subtitle mb-2 text-muted"><?= htmlspecialchars($produk['jenis']); ?> - </h6>
+
                                 <p class="card-text">Alamat: <?= htmlspecialchars($produk['alamat']); ?></p>
+
                                 <p class="card-text">
                                     Harga: Rp <?= htmlspecialchars($produk['harga']); ?><br>
                                     Status: <?= htmlspecialchars($produk['status']); ?><br>
@@ -120,7 +122,6 @@ $produkList = $produkController->showAllProduk();
                                     </a><br>
                                     Deskripsi: <?= htmlspecialchars($produk['deskripsi']); ?>
                                 </p>
-                                <a href="https://wa.me/<?= urlencode($produk['nomor_penjual']); ?>?text=Halo,%20saya%20tertarik%20dengan%20barang%20Anda:%20<?= urlencode($produk['nama']); ?>" class="card-link" target="_blank">Hubungi Penjual</a>
                             </div>
                         </div>
                     </div>
