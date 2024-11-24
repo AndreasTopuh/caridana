@@ -13,8 +13,8 @@ class Database {
     
     private $host = 'localhost';
     private $db_name = 'db_caridana';
-    private $username = 'devops';
-    private $password = ':hebGxdL~uui~24';
+    private $username = 'devopsadmin';
+    private $password = 'De_vops12';
     public $conn;
 
     public function getConnection() {
