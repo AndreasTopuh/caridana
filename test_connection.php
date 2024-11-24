@@ -10,8 +10,8 @@ $conn = $database->getConnection();
 
 // Mengecek apakah koneksi berhasil
 if ($conn) {
-    echo "Koneksi berhasil!";
+    echo "<h1>Koneksi berhasil!</h1>";
 } else {
-    echo "Koneksi gagal.";
+    echo "<h1>Koneksi gagal.</h1>";
 }
 ?>
