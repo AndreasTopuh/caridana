@@ -17,7 +17,7 @@ class Database {
     // private $password = ':hebGxdL~uui~24';
     // public $conn;
 
-    private $host = 'localhost';
+    private $host = '103.59.95.25';
     private $db_name = 'db_caridana';
     private $username = 'devopsadmin';
     private $password = 'De_vops12';
