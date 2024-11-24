@@ -31,7 +31,6 @@ class ProdukController{
             $data = [
                 'nama' => $_POST['nama'],
                 'harga' => $_POST['harga'],
-                'kondisi' => $_POST['kondisi'],
                 'jenis' => $_POST['jenis'],
                 'status' => $_POST['status'],
                 'nomor_penjual' => $_POST['nomor_penjual'],
