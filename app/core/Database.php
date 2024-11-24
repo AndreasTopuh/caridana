@@ -11,17 +11,17 @@ define("APP_PATH", "http://103.179.56.170/unkpresent/caridana/");
 class Database {
 
     
-    // private $host = 'localhost';
-    // private $db_name = 'db_caridana';
-    // private $username = 'devops';
-    // private $password = ':hebGxdL~uui~24';
-    // public $conn;
-
-    private $host = '103.179.56.170';
+    private $host = 'localhost';
     private $db_name = 'db_caridana';
-    private $username = 'devopsadmin';
-    private $password = 'De_vops12';
+    private $username = 'devops';
+    private $password = ':hebGxdL~uui~24';
     public $conn;
+
+    // private $host = '103.179.56.170';
+    // private $db_name = 'db_caridana';
+    // private $username = 'devopsadmin';
+    // private $password = 'De_vops12';
+    // public $conn;
 
     public function getConnection() {
         $this->conn = null;
