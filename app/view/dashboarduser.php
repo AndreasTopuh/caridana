@@ -70,7 +70,7 @@ $user = $_SESSION['user'];
                     <div class="card-body">
                         <h5 class="card-title">Barang yang Anda Jual</h5>
                         <p class="card-text">Kelola barang-barang yang telah Anda jual.</p>
-                        <a href="./my_barang.php" class="btn btn-custom">Lihat Barang</a>
+                        <a href="./produk_saya.php" class="btn btn-custom">Lihat Barang</a>
                     </div>
                 </div>
             </div>
