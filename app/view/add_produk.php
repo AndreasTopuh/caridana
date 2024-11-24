@@ -12,7 +12,7 @@ if (!isset($_SESSION['user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Barang</title>
+    <title>Tambah Jualan</title>
     <link rel="stylesheet" href="/unkpresent/caridana/public/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <style>
@@ -49,14 +49,14 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body class="bg-light">
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Tambah Barang</h1>
+        <h1 class="text-center mb-4">Tambah Jualan</h1>
         <br>
                 <a href="dashboarduser.php" class="btn btn-secondary mt-3 mb-3">Kembali ke Dashboard</a>
         <form method="POST" action="../controller/ProdukController.php" class="shadow-sm p-4 bg-white rounded">
             
             <div class="mb-3">
-                <label for="nama" class="form-label small-label">Nama Barang</label>
-                <input type="text" name="nama" id="nama" class="form-control form-control-sm" placeholder="Nama Barang" required>
+                <label for="nama" class="form-label small-label">Nama Jualan</label>
+                <input type="text" name="nama" id="nama" class="form-control form-control-sm" placeholder="Nama Jualan" required>
             </div>
 
             <div class="mb-3">
@@ -65,8 +65,8 @@ if (!isset($_SESSION['user'])) {
             </div>
 
             <div class="mb-3">
-                <label for="jenis" class="form-label small-label">Jenis Barang</label>
-                <input type="text" name="jenis" id="jenis" class="form-control form-control-sm" placeholder="Jenis Barang">
+                <label for="jenis" class="form-label small-label">Jenis Jualan</label>
+                <input type="text" name="jenis" id="jenis" class="form-control form-control-sm" placeholder="Jenis Jualan">
             </div>
             <div class="mb-3">
                 <label for="status" class="form-label small-label">Status</label>
@@ -83,10 +83,10 @@ if (!isset($_SESSION['user'])) {
             </div>
             <div class="mb-3">
                 <label for="deskripsi" class="form-label small-label">Deskripsi</label>
-                <p><em>Tulis kekurangan/mines barang anda</em></p>
+                <p><em>Tulis kekurangan/mines Jualan anda</em></p>
                 <textarea name="deskripsi" id="deskripsi" class="form-control form-control-sm" placeholder="Deskripsi"></textarea>
             </div>
-            <button type="submit" name="add_produk" class="btn btn-bd-primary">Tambah Barang</button>
+            <button type="submit" name="add_produk" class="btn btn-bd-primary">Tambah Jualan</button>
         </form>
 
     </div>
